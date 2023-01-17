@@ -125,11 +125,20 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Failed to capture the picture", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                Algo algo = new Algo(img.getWidth(), img.getHeight());
 
                 //TODO: normalize image format
                 
                 //TODO: put the image through the algo and OCR
+                /*
+                    Algo algo = new Algo(img.getWidth(), img.getHeight());
+                    
+                    for each point in image
+                        algo.addPoint(x, y);
+                    
+                    for each rect in algo.getRects()
+                        sendToOCR(img.slice(rect))
+                    
+                */
 
             }
             public void onError(@NonNull ImageCaptureException e) {
