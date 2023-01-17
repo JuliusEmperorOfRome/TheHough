@@ -127,14 +127,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 Algo algo = new Algo(img.getWidth(), img.getHeight());
 
-                byte[] lum = new byte[img.getPlanes()[0].getBuffer().remaining()];
-                img.getPlanes()[0].getBuffer().get(lum);
-
-                for(int y = 0; y < img.getHeight(); ++y) {
-                    for (int x = 0; x < img.getWidth(); ++x) {
-
-                    }
-                }
+                //TODO: normalize image format
+                
+                //TODO: put the image through the algo and OCR
 
             }
             public void onError(@NonNull ImageCaptureException e) {
